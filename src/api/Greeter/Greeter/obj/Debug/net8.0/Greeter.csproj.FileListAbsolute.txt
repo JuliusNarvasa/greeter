@@ -132,3 +132,6 @@
 /Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/obj/Debug/net8.0/Greeter.pdb
 /Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/obj/Debug/net8.0/Greeter.genruntimeconfig.cache
 /Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/obj/Debug/net8.0/ref/Greeter.dll
+/Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/bin/Debug/net8.0/ChatGPT.Net.dll
+/Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/netzon-mac/Documents/personal-projects/greeter/src/api/Greeter/Greeter/obj/Debug/net8.0/Greeter.sourcelink.json

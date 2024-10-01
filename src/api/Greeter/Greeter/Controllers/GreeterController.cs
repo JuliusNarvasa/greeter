@@ -10,7 +10,15 @@ public class GreeterController(LanguageService languageService) : ControllerBase
     [HttpGet("get-languages")]
     public async Task<IActionResult> GetLanguages()
     {
-        var languages = await languageService.GetLanguages();
-        return Ok(languages);
+        try
+        {
+            var languages = await languageService.GetLanguages("Test");
+            return Ok(languages);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500);
+        }
     }
 }

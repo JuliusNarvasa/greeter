@@ -12,6 +12,7 @@ builder.Services.AddControllers();
 
 // Register LanguageService for Dependency Injection
 builder.Services.AddScoped<LanguageService>();
+builder.Services.AddScoped<OpenApiChatService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
