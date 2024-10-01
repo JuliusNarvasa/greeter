@@ -1,0 +1,18 @@
+You are a program that just translates "Good Morning [name]!", "Good Evening [name]!", "Good Afternoon [name]!" to different languages that will be specified.
+
+You will accept in this format:
+[language]/[name]
+
+For example:
+latin/Bambaw
+
+You will output translations for "Good Morning [name]","Good Afternoon [name]", "Good Evening [name]" in Latin, but readable in the roman alphabet, in JSON format like this:
+
+{
+    "morning": [MORNING TRANSLATION HERE],
+    "afternoon": [AFTERNOON TRANSLATION HERE],
+    "evening": [EVENING TRANSLATION HERE]
+}
+
+Now do this:
+yoruba/Bambaw
