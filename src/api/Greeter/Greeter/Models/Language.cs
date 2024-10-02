@@ -7,7 +7,9 @@ public partial class Language
 {
     public Guid LanguageId { get; set; }
 
-    public string Language1 { get; set; } = null!;
+    public string LanguageName { get; set; } = null!;
+
+    public string CountryOfOrigin { get; set; } = null!;
 
     public virtual ICollection<Translation> Translations { get; set; } = new List<Translation>();
 }

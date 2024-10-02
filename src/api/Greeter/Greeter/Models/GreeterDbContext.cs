@@ -34,7 +34,8 @@ public partial class GreeterDbContext : DbContext
             entity.Property(e => e.LanguageId)
                 .ValueGeneratedNever()
                 .HasColumnName("language_id");
-            entity.Property(e => e.Language1).HasColumnName("language");
+            entity.Property(e => e.CountryOfOrigin).HasColumnName("country_of_origin");
+            entity.Property(e => e.LanguageName).HasColumnName("language_name");
         });
 
         modelBuilder.Entity<Translation>(entity =>

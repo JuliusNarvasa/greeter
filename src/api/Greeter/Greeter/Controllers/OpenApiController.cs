@@ -1,10 +1,12 @@
 using Greeter.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Greeter.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[AllowAnonymous]
 public class OpenApiController(OpenApiChatService openApiChatService) : ControllerBase
 {
     [HttpGet("test-api")]
@@ -12,7 +14,7 @@ public class OpenApiController(OpenApiChatService openApiChatService) : Controll
     {
         try
         {
-            var languages = await openApiChatService.GetOpenApiKey("Test");
+            var languages = await openApiChatService.RequestGreetingTranslation("Test");
             return Ok(languages);
         }
         catch (ApplicationException e)
