@@ -1,4 +1,6 @@
 using ChatGPT.Net;
+// ReSharper disable All
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
 namespace Greeter.Services;
 
@@ -30,7 +32,7 @@ public class OpenApiChatService(IConfiguration configuration)
 
 public class TranslationResponse
 {
-    public string morning { get; set; }
-    public string afternoon { get; set; }
-    public string evening { get; set; }
+    public string Morning { get; set; }
+    public string Afternoon { get; set; }
+    public string Evening { get; set; }
 }

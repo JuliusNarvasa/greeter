@@ -66,9 +66,9 @@ public class LanguageService(GreeterDbContext dbContext, OpenApiChatService open
             {
                 TranslationId = Guid.NewGuid(),
                 LanguageId = randomLanguage.LanguageId,
-                Morning = translationString.morning,
-                Afternoon = translationString.afternoon,
-                Evening = translationString.evening,
+                Morning = translationString.Morning,
+                Afternoon = translationString.Afternoon,
+                Evening = translationString.Evening,
             };
             
             dbContext.Translations.Add(translation);
