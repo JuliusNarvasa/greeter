@@ -81,21 +81,27 @@ body {
 }
 
 #title {
-  min-width: 50px;
   color: #FFF;
   text-align: center;
-  font-size: 50px;
   border: #808080 solid 2px;
   background: #80808060;
   border-radius: 20px;
-  padding: 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-#title span {
+.greeting-text {
+  font-size: 50px;
+}
+
+#title div{
   background: -webkit-linear-gradient(white, #38495a);
   background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  animation: textBoxGrow 0.1s ease-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animStar {
@@ -107,7 +113,24 @@ body {
   }
 }
 
+@keyframes textBoxGrow {
+  0% {
+    min-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  100% {
+    min-width: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .blinking-cursor {
+  background: -webkit-linear-gradient(white, #38495a);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: black;      /* Set the cursor color */
   animation: blink 0.6s steps(1) infinite;
 }
